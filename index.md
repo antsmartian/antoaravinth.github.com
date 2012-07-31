@@ -1,22 +1,15 @@
 ---
 layout: page
-title: Blog on Programming
+title: Blog on what I love!
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
 
-## Hello Wolrd
+## HI ALL. 
 
-Code goes here `something` : 
 
-		def something = [] 
-		//comments!!
-		(a..z).each {
-			println it
-		}
-    
-## Hello World Two
+### About me
 
 
 ## My all posts..
