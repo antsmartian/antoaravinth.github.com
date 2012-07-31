@@ -8,12 +8,13 @@ tagline: Supporting tagline
 
 ## Hello Wolrd
 
-Code goes here : 
+Code goes here `something` : 
 
-	`
 		def something = [] 
 		//comments!!
-	`
+		(a..z).each {
+			println it
+		}
     
 ## Hello World Two
 
