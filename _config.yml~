@@ -72,6 +72,7 @@ JB :
   categories_path : /categories.html
   tags_path : /tags.html
   pages_path : /pages.html
+  full_path : /pages/
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
