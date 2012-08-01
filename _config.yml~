@@ -71,7 +71,7 @@ JB :
   archive_path: /archive.html
   categories_path : /categories.html
   tags_path : /tags.html
-  #pages_path : /pages.html
+  pages_path : /pages.html
   full_path : /pages/
 
   # Settings for comments helper

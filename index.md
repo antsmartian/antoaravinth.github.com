@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Hi All!
+title: Introduction!
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
- 
+
+
+## HI ALL. 
 
 
 ### About me:
