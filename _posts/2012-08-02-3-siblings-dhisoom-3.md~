@@ -7,9 +7,13 @@ tags: []
 ---
 {% include JB/setup %}
 
-This is where I'm going to code!
+Hi all, probably this is my first blog post on my new blog. The title **Siblings Dhisoom!** might be misleading. Ok well this is the 
+blog post that I write for my sisters. It has something related to programming languages, i.e I'm gonna explain you how I got a idea of 
+wishing my sisters via **Groovy** code!
 
-	def a = []
-	println ""
+If that doesn't sound interesting to you, you can go skip reading my post.
+
+I certainly love doing certain things in 
+
 
 
