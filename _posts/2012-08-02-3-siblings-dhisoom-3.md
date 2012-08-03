@@ -128,7 +128,7 @@ And DSL's can also be written in C#,Java, Scala , Ruby and other languages. I ch
 	
 I just simply wrote this blog post in a text editor(gedit). So there can be splling mistke, may would has gramatical flaws badly. If that is the case leave a comment.
 
-Thanks for reading my post. If you have any doubts, feel free to post the comment. Comments are welcome!
+Thanks for reading my post. If you have any doubts, feel free to post the comment. Comments are welcome.!
 
 ###That's all folks!
 	
