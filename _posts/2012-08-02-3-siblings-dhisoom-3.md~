@@ -2,7 +2,7 @@
 layout: post
 title: "<3 Siblings Dhisoom! <3"
 description: ""
-category: programming,Groovy
+category: 
 tags: [Groovy,DSL,Sisters]
 ---
 {% include JB/setup %}
