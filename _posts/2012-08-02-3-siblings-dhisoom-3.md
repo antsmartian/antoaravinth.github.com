@@ -105,7 +105,7 @@ That is pretty cool. Thats what I need. And also :
 	rakiWishes 'anto' "antosUpComingWifeName" //this need to return this!
 	"no brother sister relation is specified"
 	
-The code is fully tested with `assert` checks. You can see the full implementation [here](http://ideone.com/WStY1)
+The code is fully tested with `assert` checks. You can see the full implementation [here](http://ideone.com/WStY1).
 
 
 You can clearly see there is no error's in my program and it is executing without any output's as it should be.
@@ -128,9 +128,11 @@ And DSL's can also be written in C#,Java, Scala , Ruby and other languages. I ch
 	
 I just simply wrote this blog post in a text editor(gedit). So there can be splling mistke, may would has gramatical flaws badly. If that is the case leave a comment.
 
-Thanks for reading my post. If you have any doubts, feel free to post the comment. Comments are welcome.!
+Thanks for reading my post. If you have any doubts, feel free to post the comment. Comments are welcome!
 
 ###That's all folks!
+
+
 	
 	 
 
