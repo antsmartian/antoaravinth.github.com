@@ -105,7 +105,11 @@ That is pretty cool. Thats what I need. And also :
 	rakiWishes 'anto' "antosUpComingWifeName" //this need to return this!
 	"no brother sister relation is specified"
 	
+<<<<<<< HEAD
 The code is fully tested with `assert` checks. You can see the full implementation [here](http://ideone.com/WStY1).
+=======
+The code is fully tested with `assert` checks. You can see the full implementation [here](http://ideone.com/D11qP)
+>>>>>>> parent of d63e5bd... bug fixed
 
 
 You can clearly see there is no error's in my program and it is executing without any output's as it should be.
