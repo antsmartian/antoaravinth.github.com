@@ -46,9 +46,9 @@ this as DSL for brother-sister relation! (Ok, I accpet this can't be 100% DSL fo
 DSL languages need to be given some name, oki I call this small pretty DSL as Siblings Dilemma! :D 
 
 >Technically: To be in terms of Groovy *semantics*, the `rakiWishes` is a method that accepts a method pointer
-with the paramaters `anto` and `ramya`. Note that there are two parameters, but I haven't specified `,` in between
-them to separate them. Somehow in my implementation I found that `ramya` is my second paramater. If that sound's
-hard for you, leave a comment. 
+>with the paramaters `anto` and `ramya`. Note that there are two parameters, but I haven't specified `,` in between
+>them to separate them. Somehow in my implementation I found that `ramya` is my second paramater. If that sound's
+>hard for you, leave a comment. 
 
 
 So what I need basically is that when I call or do something like this in my Groovy code :
