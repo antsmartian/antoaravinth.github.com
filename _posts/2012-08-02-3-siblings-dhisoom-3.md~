@@ -13,7 +13,7 @@ wishing my sisters via **Groovy** code!
 
 If that doesn't sound interesting to you, you can go skip reading my post.
 
-I request you to read (this)[http://antoaravinth.github.com/2012/07/31/hello-world/] post before you move on. I will wait here. Done reading? So all set, lets move on quickly.
+I request you to read [this](http://antoaravinth.github.com/2012/07/31/hello-world/) post before you move on. I will wait here. Done reading? So all set, lets move on quickly.
 
 I certainly love doing certain things in my fav language **Groovy**. So I was thinking how I can use this 
 language to wish my sister. This idea might seem pretty odd, but thats oki. Actually I need some ways to do this :
@@ -125,7 +125,7 @@ So apart from Groovy wishing my sister, let me wish myself "Happy raksha bandhan
 But the idea is fully mine! And the title **Siblings Dhisoom!** is taken from Twitter trend (2/Aug/2012).
 
 **Note2**: DSL's are getting famous these days. I want you to know about it. My program can't be called fully as DSL. But I used
-the terms here, because I will be writing several post on this topic in near feature.
+the terms here, because I will be writing several post on this topic in near feature and also want you to get know about the DSL subject!.
 	
 I just simply wrote the blog in a text editor. So there can be splling mistke, may would has gramatical flaws badly. If that is the case leave a comment.
 
