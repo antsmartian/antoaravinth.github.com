@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "This will be probably mine first post!"
+title: "README"
 description: ""
-category: 
 tags: [intro]
 ---
 {% include JB/setup %}
 
 
 ###Conventions used in this blog.
-Hello all, this is my new blog. I shifted from (here)[http://cse0812.blogspot.in/]. There are many reason's for it.
+Hello all, this is my new blog. I shifted from [here](http://cse0812.blogspot.in/). There are many reason's for it.
 The first and last reason is that I can't add code snippets easily in blogspot (I need to prefer some other tips/tricks), which I hate completely. 
 
 This blogs run on Jekyll, which is built on ruby I guess, not sure though. 
