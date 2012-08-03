@@ -13,12 +13,14 @@ wishing my sisters via **Groovy** code!
 
 If that doesn't sound interesting to you, you can go skip reading my post.
 
+I request you to read (this)[http://antoaravinth.github.com/2012/07/31/hello-world/] post before you move on. I will wait here. Done reading? So all set, lets move on quickly.
+
 I certainly love doing certain things in my fav language **Groovy**. So I was thinking how I can use this 
 language to wish my sister. This idea might seem pretty odd, but thats oki. Actually I need some ways to do this :
 
 	rakiWishes "anto" "ramya"
 	
-It looks direct english language, but I need this code to run in Groovy with out any error's. Am I crazy? No this is possible, this what the subject of Domain Specification language (DSL) deals with. Mind you, Domain specification language are topics on its own, I'm not going to explain them in my blog. 
+It looks direct english language, but I need this code to run this in Groovy with out any error's. Am I crazy? No this is possible, this what the subject of Domain Specification language (DSL) deals with. Mind you, Domain specification language are topics on its own, I'm not going to explain them in my blog. 
 
 But what basically DSL means? In very simple terms DSL is used to solve a problem on a particular domain. So SQL is an DSL
 to solve query related problems against DB's. And as HTML. Do you wondering Java/C# is for? Well that is not a DSL, they are 
@@ -119,13 +121,15 @@ That is super cool!
 So apart from Groovy wishing my sister, let me wish myself "Happy raksha bandhan" to my sisters :D 
 
 
-**Note**: The code that I have written is not fully by me. 40% of the code is based on Groovy's utility scripts.
-But the idea is fully mine! And the title **Siblings Dhisoom!** is taken from Twitter trends.
-	
-I just simply wrote the blog in a text editor. So there can be splling mistke, may has gramatical flaws. If that is the case
-leave a comment.
+**Note1**: The code that I have written is not fully by me. 40% of the code is based on Groovy's utility scripts.
+But the idea is fully mine! And the title **Siblings Dhisoom!** is taken from Twitter trend (2/Aug/2012).
 
-Thanks for reading my post. If you have any doubts, feel free to post the comment. 
+**Note2**: DSL's are getting famous these days. I want you to know about it. My program can't be called fully as DSL. But I used
+the terms here, because I will be writing several post on this topic in near feature.
+	
+I just simply wrote the blog in a text editor. So there can be splling mistke, may would has gramatical flaws badly. If that is the case leave a comment.
+
+Thanks for reading my post. If you have any doubts, feel free to post the comment. Comments are welcome!
 
 ###That's all folks!
 	
