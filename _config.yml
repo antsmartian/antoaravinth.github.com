@@ -13,7 +13,7 @@ title : Blog On What I Love!
 tagline: Site Tagline
 author : 
   name : Anto Aravinth
-  github : antoaravinth
+#  github : antoaravinth
   twitter : antoaravinth
 
 # The production_url is only used when full-domain names are needed

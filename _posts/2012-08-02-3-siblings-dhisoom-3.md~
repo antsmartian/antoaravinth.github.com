@@ -7,9 +7,7 @@ tags: [Groovy,DSL,Sisters]
 ---
 {% include JB/setup %}
 
-Hi all, probably this is my first blog post on my new blog. The title **Siblings Dhisoom!** might be misleading. Ok well this is the 
-blog post that I write for my sisters. It has something related to programming languages, i.e I'm gonna explain you how I got a idea of 
-wishing my sisters via **Groovy** code!
+Hi all, probably this is my first blog post on my new blog. The title **Siblings Dhisoom!** might be misleading. Here I not only wrote about my siblings but of all my sisters. Ok well this is the blog post that I write for my sisters. It has something related to programming languages, i.e I'm gonna explain you how I got a idea of wishing my sisters via **Groovy** code!
 
 If that doesn't sound interesting to you, you can go skip reading my post.
 
@@ -46,9 +44,9 @@ this as DSL for brother-sister relation! (Ok, I accpet this can't be 100% DSL fo
 DSL languages need to be given some name, oki I call this small pretty DSL as Siblings Dilemma! :D 
 
 >Technically: To be in terms of Groovy *semantics*, the `rakiWishes` is a method that accepts a method pointer
-with the paramaters `anto` and `ramya`. Note that there are two parameters, but I haven't specified `,` in between
-them to separate them. Somehow in my implementation I found that `ramya` is my second paramater. If that sound's
-hard for you, leave a comment. 
+>with the paramaters `anto` and `ramya`. Note that there are two parameters, but I haven't specified `,` in between
+>them to separate them. Somehow in my implementation I found that `ramya` is my second paramater. If that sound's
+>hard for you, leave a comment. 
 
 
 So what I need basically is that when I call or do something like this in my Groovy code :
@@ -126,8 +124,9 @@ But the idea is fully mine! And the title **Siblings Dhisoom!** is taken from Tw
 
 **Note2**: DSL's are getting famous these days. I want you to know about it. My program can't be called fully as DSL. But I used
 the terms here, because I will be writing several post on this topic in near feature and also want you to get know about the DSL subject!.
+And DSL's can also be written in C#,Java, Scala , Ruby and other languages. I choose Groovy as my personal interest. 
 	
-I just simply wrote the blog in a text editor. So there can be splling mistke, may would has gramatical flaws badly. If that is the case leave a comment.
+I just simply wrote this blog post in a text editor(gedit). So there can be splling mistke, may would has gramatical flaws badly. If that is the case leave a comment.
 
 Thanks for reading my post. If you have any doubts, feel free to post the comment. Comments are welcome!
 
