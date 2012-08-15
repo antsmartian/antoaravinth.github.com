@@ -54,7 +54,7 @@ Will play the song and will get the output as:
 	 Duration: 00:03:46.98  Title: Oh Baby Girl
 	 In:4.71% 00:00:10.68 [00:03:36.30] Out:471k  [   ===|=-    ] Hd:0.0 Clip:0  
 
-That is pretty cool. Now we have found a way to play a song from command line. Now we need to look for half an hour waiting part before calling the play command. That is very simple as well. 
+That is pretty cool. Now we have found a way to play a song from command line. Now we need to look for half an hour waiting part before calling the `play` command. That is very simple as well. 
 
 There is a command called `sleep` in Ubuntu, which allows your system to sleep for certain time:
 
@@ -65,7 +65,7 @@ Allows your system to sleep for `30` minutes. Bingo! So our pseudocode will look
 	sleep 30000
 	play ~/Desktop/SONGS/01\ -\ Oh\ Baby\ Girl.mp3
 
-That looks super cool. Oh oki, I can figure out what your thinking right now; I promised to solve this problem in one line of code. Isn't? I'm not a cheater in anyway!( :D ). In ubuntu, you can terminate a command with `;` as with other languages. So 
+That looks super cool. Oh oki, I can figure out what your thinking right now; I promised to solve this problem in one line of code. Isn't? I'm not a cheater in anyway!( :D ). So let us *prove* that now; In ubuntu, you can terminate a command with `;` as with other languages. So 
 our code will become:
 
 	sleep 30000; play -q ~/Desktop/SONGS/01\ -\ Oh\ Baby\ Girl.mp3
@@ -73,6 +73,8 @@ our code will become:
 Cool. So now we need to do simply like this:
 	
 	echo 'sleep 30000; play -q ~/Desktop/SONGS/01\ -\ Oh\ Baby\ Girl.mp3' > songs
+
+####WatchOut: This is a single line of command, due to spacing reason it might be rendered as double line!
 
 This line will open up the `songs` file(if any or will create a new one). And put the line `sleep 30000; play ~/Desktop/SONGS/01\ -\ Oh\ Baby\ Girl.mp3` into that file and save it!
 
@@ -92,10 +94,10 @@ Thats it! Now you have command called `songs` which you can run as normal comman
 
 Oh guys, its been half an hour since I wrote this post. My song (Oh ho oh ho. . . ) has been started to play. So 
 
-->Its Time To Relax My-Self<-
+#Its Time To Relax My-Self
 
 
-#####Note: I could have been made the songs command to recieve the song location from command line. But requries some more work. And I want to keep this post as simple as I would. I hope did that. And once the song has been started to play and if you wish to stop it, you can do `killall play`. Comments are welcome!! 
+####Note: I could have made the `songs` command to recieve the song location from command line. But it requries some more work. And I want to keep this post as simple as I would. I hope I did that. And once the song has been started to play and if you wish to stop it, you can do `killall play`, from terminal. 
 
 I just simply wrote this blog post in a text editor(gedit). So there can be splling mistke, may would has gramatical flaws badly. If that is the case leave a comment.
 
@@ -103,5 +105,5 @@ Thanks for reading my post. If you have any doubts, feel free to post the commen
 
 And as always:
 
-#####Thats all folks!
+##Thats all folks!
 
