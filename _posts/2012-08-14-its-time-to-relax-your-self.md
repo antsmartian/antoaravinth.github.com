@@ -94,10 +94,7 @@ Thats it! Now you have command called `songs` which you can run as normal comman
 
 Oh guys, its been half an hour since I wrote this post. My song (Oh ho oh ho. . . ) has been started to play. So 
 
-#Its Time To Relax My-Self
-
-
-####Note: I could have made the `songs` command to recieve the song location from command line. But it requries some more work. And I want to keep this post as simple as I would. I hope I did that. And once the song has been started to play and if you wish to stop it, you can do `killall play`, from terminal. 
+##Its Time To Relax My-Self
 
 I just simply wrote this blog post in a text editor(gedit). So there can be splling mistke, may would has gramatical flaws badly. If that is the case leave a comment.
 
@@ -105,5 +102,7 @@ Thanks for reading my post. If you have any doubts, feel free to post the commen
 
 And as always:
 
-##Thats all folks!
+###Thats all folks!
+
+####Note: I could have made the `songs` command to recieve the song location from command line. But it requries some more work. And I want to keep this post as simple as I would. I hope I did that. And once the song has been started to play and if you wish to stop it, you can do `killall play`, from terminal. 
 
