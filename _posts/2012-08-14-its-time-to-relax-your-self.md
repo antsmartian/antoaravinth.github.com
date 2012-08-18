@@ -25,13 +25,13 @@ Alright! Again, if this doesn't seems interesting to you, you can skip reading m
 Came here? Interested reading? Cool. Lets start. So there are plenty of ways to *automate* this process. For example, I can write a java program which starts a thread and sleeps for half an hour and goes to the music location and plays it with the help of [music api](http://docs.oracle.com/javase/7/docs/api/javax/sound/sampled/package-summary.html). But again that requires lot of work. So let me show you how I solved this problem with single line of code! (strictly speaking, it should be one line of *commands*.)
 
 
-So let me open up my terminal in Ubuntu. Will try running the following command `song`. I will get this error: 
+So let me open up my terminal in Ubuntu. Will try running the following command `songs`. I will get this error: 
 
-	No command 'song' found, did you mean:
+	No command 'songs' found, did you mean:
 	Command 'sng' from package 'sng' (universe)
-	song: command not found
+	songs: command not found
 
-Yes, there are is no command called `song` in Ubuntu. So let us create one! So what we need is to play a particular song after half an hour time. In ubuntu, there is a command called `play`, which lets you to hear song from command line like this:
+Yes, there are is no command called `songs` in Ubuntu. So let us create one! So what we need is to play a particular song after half an hour time. In ubuntu, there is a command called `play`, which lets you to hear song from command line like this:
 
 	 play ~/Desktop/SONGS/01\ -\ Oh\ Baby\ Girl.mp3
 
