@@ -11,7 +11,7 @@ tagline: Supporting tagline
 
 ### About me:
 Nothing much about me. I'm a guy who have just finished my Engineering (B.E) and working as an intern in [Juspay](http://juspay.in/).
-I certainly love doing some stuffs with programming languages like Java, Groovy , C#. Recently fallen in love with bash scripting and brainfu*k. 
+I certainly love doing some stuffs with programming languages like Java, Groovy , C#. Recently fallen in love with bash scripting and brainfu_k. 
 Love to solve programatic problems. Always eager to learn new things in current software field. Ah! Thats much enough about me.
 
 
