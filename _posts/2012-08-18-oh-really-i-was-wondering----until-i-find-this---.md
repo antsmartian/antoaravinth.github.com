@@ -82,7 +82,7 @@ I went on searching in google to find the solution for our case. I was shocked. 
 And if you remember Newton Method, it will take a number for guessing, do some approx on it and goes further. You can see this [here](http://en.wikipedia.org/wiki/Newton%27s_method#Square%5Froot%5Fof%5Fa%5Fnumber). I can even remember my mam saying, Newton method is much faster than other methods!
 
 
-So as we know the algorithm we can write a the code easily, again in Groovy the whole code looks like this( I just followed the pseudo code of Newton method and looked at other langugaes of how they implement their Newton method and converted into Groovy):
+So as we have the algorithm in our hand, we can write the code easily. So in Groovy the whole code looks like this( I just followed the pseudo code of Newton method and looked at other langugaes of how they implement their Newton method and converted into Groovy):
 
 
 		def newtonMethod(guess,x){
