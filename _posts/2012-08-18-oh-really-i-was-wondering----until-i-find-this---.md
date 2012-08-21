@@ -125,7 +125,7 @@ I just simply wrote this blog post in a text editor(gedit). So there can be spll
 Thanks for reading my post. If you have any doubts, feel free to post the comment. Comments are welcome!
 
 
-####Note: I didn't claim that fdlibm lib would have used Newton method. I don't know about that. But I want to show you how java works internally in this case; and Newton methods and other things which we learned in NM are quite useful in real world and not for getting marks in Anna Univ exams, as our coll would have said! Comments, suggestions, error spotting are welcome as always! Keep *guessing* on my next post. . . :D :D  See you!! 
+#####Note: I didn't claim that fdlibm lib would have used Newton method. I don't know about that. But I want to show you how java works internally in this case; and Newton methods and other things which we learned in NM are quite useful in real world and not for getting marks in Anna Univ exams, as our coll would have said! Comments, suggestions, error spotting are welcome as always! Keep *guessing* on my next post. . . :D :D  See you!! 
 
 
 
