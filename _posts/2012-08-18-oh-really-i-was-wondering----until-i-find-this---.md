@@ -19,7 +19,7 @@ number is defined as :
 
 >In mathematics, a square root of a number a is a number y such that y^2 = a . . . 
 
-So square root of a number 36 will be 6 because 6*6 = 36. All with me? Cool.
+So square root of a number 36 will be 6 because 6 X 6 = 36. All with me? Cool.
 
 Now to make your brain work harder, what is the square root of 1694? Well, I myself don't know that. Using google calculator I get
 the answer as 41.1582312545. 
@@ -47,14 +47,14 @@ This is perfect and clean answer! But wait a moment! Finding a sqrt of a number 
 
 Oki, will see the code of `sqrt` function and what it does:
 
-			public static double sqrt(double a) {
-     	   		return StrictMath.sqrt(a); 
-     	   	}
+		public static double sqrt(double a) {
+     	   return StrictMath.sqrt(a); 
+        }
 
 Alright it seems, `Math` doesn't know how to calculate the `sqrt`;its calling `StrictMath` for doing this process. So let us see, how this `StrictMath` guessing
 it correctly:
 
-			 public static native double sqrt(double a);
+		public static native double sqrt(double a);
 
 
 Oh man! Even `StrictMath` doesn't do the job. Its executing a **native** code! So looking at the doc's of `StrictMath`, it says:
@@ -85,33 +85,33 @@ And if you remember Newton Method, it will take a number initially guesses it, d
 So as we know the algorithm we can write a the code easily, again in Groovy the whole code looks like this( I just followed the pseudo code of Newton method and looked at other langugaes of how they implement their Newton method and converted into Groovy):
 
 
-	def newtonMethod(guess,x){
-	    if((good(guess,x)))
-          	return guess
-    	newtonMethod((improve(guess,x)),x)
-	}
+		def newtonMethod(guess,x){
+		    if((good(guess,x)))
+          		return guess
+    		newtonMethod((improve(guess,x)),x)
+		}
+		 
+		improve = { guess, x -> 
+        		def temp = x/guess
+        		average(guess,temp)
+		}
 	 
-	improve = { guess, x -> 
-        	def temp = x/guess
-        	average(guess,temp)
-	}
+		average = { x,y ->
+	    	(x + y)/2
+		}
 	 
-	average = { x,y ->
-	    (x + y)/2
-	}
+		square = { it * it  }
+		 
+		def good(guess,x) {
+	    	def temp = Math.abs(square(guess) - x)
+	    	(temp < 0.001)
+		}
 	 
-	square = { it * it  }
+		def sqrt = {
+		    newtonMethod(1.0,it)
+		}
 	 
-	def good(guess,x) {
-	    def temp = Math.abs(square(guess) - x)
-	    (temp < 0.001)
-	}
-	 
-	def sqrt = {
-	    newtonMethod(1.0,it)
-	}
- 
-	println "The sqrt of a given no 34615 is ${sqrt(34615)}"
+		println "The sqrt of a given no 34615 is ${sqrt(34615)}"
 
 
 Prints `186.051068360336` as the answer. You can see the execution of this program [here](http://ideone.com/Ypmwn). Comparing this with `Math.sqrt` function answer which is `186.05106825815324`, we can take a deep breath and say its almost **close**. And as always,
@@ -123,7 +123,7 @@ I just simply wrote this blog post in a text editor(gedit). So there can be spll
 Thanks for reading my post. If you have any doubts, feel free to post the comment. Comments are welcome!
 
 
-###Note: I didn't claim that fdlibm lib would have used Newton method. I don't know about that. But I want to show you how java works internally in this case; and Newton methods and other things which we learned in NM are quite useful in real world and not for getting marks in Anna Univ exams, as our coll would have said! Comments, suggestions, error spotting are welcome as always! Keep *guessing* on my next post. . . :D :D  See yo!! 
+#####Note: I didn't claim that fdlibm lib would have used Newton method. I don't know about that. But I want to show you how java works internally in this case; and Newton methods and other things which we learned in NM are quite useful in real world and not for getting marks in Anna Univ exams, as our coll would have said! Comments, suggestions, error spotting are welcome as always! Keep *guessing* on my next post. . . :D :D  See yo!! 
 
 
 
