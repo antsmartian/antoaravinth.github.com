@@ -69,7 +69,7 @@ So pictorially, this should look something like:
 	         |
 	         |
 	         |		
-	    |			   
+	       |			   
 	----------------------
 	|                    |
 	| Your Network 1     |
@@ -97,7 +97,7 @@ So now our system will look something like :
 	      ^  |
 	      ^  |
 	      ^  |		
-	^  |			   
+	    ^  |			   
 	----------------------
 	|                    |
 	| Your Network 1     |
