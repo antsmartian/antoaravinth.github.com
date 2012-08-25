@@ -68,8 +68,7 @@ So pictorially, this should look something like:
 	I was say correct time (Machine 1)
 	         |
 	         |
-	         |		
-	       |			   
+	         |				   
 	----------------------
 	|                    |
 	| Your Network 1     |
@@ -96,7 +95,7 @@ So now our system will look something like :
 	      NTP POOL
 	      ^  |
 	      ^  |
-	      ^  |		  |			   
+	      ^  |		  		   
 	----------------------
 	|                    |
 	| Your Network 1     |
