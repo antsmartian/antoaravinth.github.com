@@ -56,9 +56,9 @@ So as I said before, time can go wrong in computers as they are simply battery b
 
 So the simple solution is to use [NTP](http://en.wikipedia.org/wiki/Network_Time_Protocol). This is the protocol that will allow your systems in the netwwork to follow the standard time. The way it works is pretty simple:
 
-   1. You will be having a clock that is running in your main system, which is used to be correct. Check [here](http://en.wikipedia.org/wiki/Atomic_clock).
++ You will be having a clock that is running in your main system, which is used to be correct. Check [here](http://en.wikipedia.org/wiki/Atomic_clock).
 
-   2. And that machine will be connected to your *own* network. 
++ And that machine will be connected to your *own* network. 
 
 (There are plenty of other steps requried but I didn't mention it here, because I don't want to bore you with network concepts. Check out other sites if you really want to understand how NTP works deeply)
 
@@ -69,7 +69,7 @@ So pictorially, this should look something like:
 	         |
 	         |
 	         |		
-		    |			   
+	    |			   
 	----------------------
 	|                    |
 	| Your Network 1     |
@@ -85,9 +85,9 @@ There are plenty of servers up and running called as [NTP pool](http://en.wikipe
 
 So that is what we want. One of such service is [here](http://www.pool.ntp.org/en/). So to maintain a server which is up and running exactly with proper time, then you need to do :
 
-  1. Install NTP in your server.
++ Install NTP in your server.
 
-  2. Config it to follow the NTP pool project via internet. 
++ Config it to follow the NTP pool project via internet. 
 
 So now our system will look something like :
 
@@ -97,7 +97,7 @@ So now our system will look something like :
 	      ^  |
 	      ^  |
 	      ^  |		
-		^  |			   
+	^  |			   
 	----------------------
 	|                    |
 	| Your Network 1     |
