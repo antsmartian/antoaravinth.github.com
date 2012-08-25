@@ -96,8 +96,7 @@ So now our system will look something like :
 	      NTP POOL
 	      ^  |
 	      ^  |
-	      ^  |		
-	    ^  |			   
+	      ^  |		  |			   
 	----------------------
 	|                    |
 	| Your Network 1     |
