@@ -56,9 +56,9 @@ So as I said before, time can go wrong in computers as they are simply battery b
 
 So the simple solution is to use [NTP](http://en.wikipedia.org/wiki/Network_Time_Protocol). This is the protocol that will allow your systems in the network to follow the standard time, I mean the correct time. The way it works is pretty simple:
 
-   + You will be having a clock that is running in your main system, which is used to be correct. How it will be correct is not my talk. But you can look it [here](http://en.wikipedia.org/wiki/Atomic_clock).
++ You will be having a clock that is running in your main system, which is used to be correct. How it will be correct is not my talk. But you can look it [here](http://en.wikipedia.org/wiki/Atomic_clock).
 
-   + And that machine will be connected to your *own* network. 
++ And that machine will be connected to your *own* network. 
 
 (There are plenty of other steps requried but I didn't mention it here, because I don't want to bore you with network concepts. Check out other sites if you really want to understand how NTP works deeply)
 
@@ -84,9 +84,9 @@ There are plenty of servers up and running called as [NTP pool](http://en.wikipe
 
 So that is what we want. One of such service is [here](http://www.pool.ntp.org/en/). So to maintain a server which is up and running exactly with proper time, then you need to do :
 
-   + Install NTP software in your server.
++ Install NTP software in your server.
 
-   + Config it to follow the NTP pool project via internet. This is important because, this is where it get's the correct time.
++ Config it to follow the NTP pool project via internet. This is important because, this is where it get's the correct time.
 
 So now our system will look something like :
 
@@ -107,6 +107,9 @@ The `^` symbol in the above diagram shows that your network system is asking the
 
 >For Geeks: Actually NTP can fail! Think simply, what will happen if there is a problem in internet which makes the time synchronization packets to arrive late than the expected time? Think about it. And also opening your network to internet, means that your open to attack!
 
+
+So now you know that your site have went down by 11:46 ( provided that you have used some techniques like NTP) and happy news is that you cleared the bug and your site is up and running! 
+
 And ya its time to close my editor and leave to my friends place! See you, next *time* take care! 
 
 
@@ -117,4 +120,4 @@ Thanks for reading my post. If you have any doubts, feel free to post the commen
 
 ###That's all folks!
 
-####Note:I shown one of the methods to get the correct time. Setting up NTP server is simple to explain and I choose it. There are other aways too. But I dont have *time* to explain it here. 
+#####Note:I shown one of the methods to get the correct time. Setting up NTP server is simple to explain and I choose it. There are other aways too. But I dont have *time* to explain it here. 
