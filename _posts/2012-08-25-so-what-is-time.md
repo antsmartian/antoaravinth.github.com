@@ -110,7 +110,7 @@ The `^` symbol in the above diagram shows that your network system is asking the
 
 So now you know that your site have went down by 11:46 ( provided that you have used some techniques like NTP) and happy news is that you cleared the bug and your site is up and running! 
 
-And ya its time to close my editor and leave to my friends place! See you, next *time* take care! 
+And ya its time to close my editor and leave to my friends place! See you next *time* :) Take care! 
 
 
 I just simply wrote this blog post in a text editor(gedit). So there can be splling mistke, may would has gramatical flaws badly. If that is the case leave a comment.
