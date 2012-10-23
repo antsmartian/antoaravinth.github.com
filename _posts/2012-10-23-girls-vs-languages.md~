@@ -9,7 +9,7 @@ tags: []
 
 Hello all :D I hope you people are doing great. This post will speak about java and its related technologies, why I love them and why I hate them. 
 
-If any one come and ask me why I love to code in Groovy. I would say first say these : "Groovy is a dynamic language, it can be called as a fully oop language
+If any one come and ask me why I love to code in Groovy. I would first say these : "Groovy is a dynamic language, it can be called as a fully oop language
 , it can be used as functional language, it has several nice features of what Javascript has, we can do operator overloading, we can write down dsl's, and blah
 blah blah blah. . . . ". The list goes on and on. But I can understand your feeling, that is too techy and its boring you. 
 
@@ -50,7 +50,7 @@ What I mean by this is, lets take a example, lets say I write a code in java lik
 
     System.out.println("Hello World!")
 
-Note that I have written the code without `;`. And Java is not **satifised**. You need to add `;` for no reason. That is there is no usefulness for us by adding it.
+Note that I have written the code without `;`. And Java is not **satifised**, it wont allow you to compile this program. You need to add `;` for no reason. That is there is no usefulness for us by adding it.
 Do you think so?
 
 If we give this code to Java/Jessi they wont accept it : 
@@ -76,7 +76,7 @@ Our job is to print , so it should have been something like this in Java :
 
     println("Hello World")
 
-but it isn't. The problem was with the design of the Java language. But eventually the code : 
+but it isn't available in Java. The problem was with the design of the Java language. But eventually the code : 
 
     println("Hello World")
 
@@ -94,7 +94,7 @@ Pretty new when considered to Java and more beautiful. Groovy has some nice feat
     //closures
     def closures = {  }
 
-The coolest thing in Groovy is that you no need to say the data type. Groovy can *infer* for you. That is in the above code `string` is of type `String`. But we haven't specified it in our code. Groovy can find that for us. The anology is same as like with Java. The closures in Groovy are very powerful in nature and they are similar to the delegate concept of C#.
+The coolest thing in Groovy is that you no need to say the data type. Groovy can *infer* for you. That is in the above code `string` is of type `String`. But we haven't specified it in our code. Groovy can find that for us. The closures in Groovy are very powerful in nature and they are similar to the delegate concept of C# (I'm not sure of whom I need to compare C# with, I haven't used it much) . 
 
 To be more precise, what you do if you want to do open a file in Java? You should do something like this:
 
@@ -107,9 +107,9 @@ Lets look how Samantha helps us. The code for opening and printing each line in 
 
     new File('myfile.txt').eachLine { println it }
 
-Thats it. The above code will open the file named `myfile.txt` and close them properly once it has been finished processing. The `{`,`}` block are called as closures which is taking care of opening and closing our file properly. 
+Thats it. The above code will open the file named `myfile.txt` and close them properly once it has been finished processing. The `{`,`}` block are called as closures which is taking care of opening and closing our file properly. Closures does also have other powerful properties, which I haven't spoken here in this blog.
 
-The reason why I choose Samantha pic of Naan Ee has two reasons. 1. To make guys stick to the post and 2. Was to . . . . .
+The reason why I choose Samantha pic of Naan Ee has two reasons. 1. To make guys stick to the post and 2. Was to . . . . . 
 
 As in case of Naan Ee, being we as housefly we are just saying the compiler to do useful things but asking our compiler or samantha to do the rest hard work.
 
@@ -117,11 +117,11 @@ What I mean by this is, when I do :
 
     new File('myfile.txt').eachLine { println it }
 
-This looks really great in the eyes of devoloper. But note how much work Groovy is needed to do in order to open the files and close them? 
+This looks really great in the eyes of devoloper. But note how much work Groovy is needed to do in order to open the files and close them behind the scenes? 
 
-#####No lunch is called as "Free lunch"
+>#####No lunch is called as "Free lunch"
 
-If Groovy is doing what *it* is said to do and what is not said to do ( in our example it is taking care of opening and closing the files, even though we didn't asked him to do ) then there is a issue. The issue is performance. Groovy code will run slower than Java code ( keep this in mind, I will come back later to this point ). Performance problem is someone like :
+In file example Groovy is taking care of opening and closing the files. And also it creates a class for us behind the scenes ( this is because JVM has certain conditions on which only the code will be allowed to execute ). All these are done by Groovy for us, creating the class , opening the files and many other things make Groovy to work slower than Java. Groovy code will run slower than Java code ( keep this in mind, I will come back later to this point ). Performance problem is someone like :
 
 ![villan][5]
 [5]: http://i.imgur.com/Kyfqq.jpg
@@ -147,6 +147,8 @@ That someone is :
 
 ![ee][6]
 [6]: http://i.imgur.com/4fi1m.jpg
+
+
 
 #####Intro to InvokeDynmaic:
 
