@@ -126,5 +126,27 @@ If Groovy is doing what *it* is said to do and what is not said to do ( in our e
 ![villan][5]
 [5]: http://i.imgur.com/Kyfqq.jpg
 
-We need to takle him in order to make Samantha/Groovy works faster. 
+We need to takle him in order to make Samantha/Groovy works faster. The introduction of Java 7 has a new type of bytecode called as `invokedynamice`.
+Let us consider a simple java code:
+
+    String anto = "someone"
+    anto.length()
+
+Nothing fancy here. The `anto` is so type of `String` which is known by the compiler. With this known information when I do `anto.length()` Java know's I'm calling the `length()` method of `String` class. But consider the case in Groovy:
+
+    def anto = "someone"
+    anto.size()
+
+    anto = 123
+    //after some code
+    anto.callSomeMethod() 
+
+Ok with your naked eye can you say what is the type of `anto` in the above code? The types are changing. Can you be sure that `anto` can be only `String` and `Integer` in this case? `callSomeMethod()` will be belonging to which class ( tricky eh ) ? Compiler can't predict them in before hand so it need to something to make the code run faster. There is some one who need to help out Samantha. 
+
+That someone is : 
+
+![ee][6]
+[6]: http://i.imgur.com/4fi1m.jpg
+
+#####Intro to InvokeDynmaic:
 
