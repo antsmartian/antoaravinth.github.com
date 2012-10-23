@@ -42,7 +42,27 @@ I was like "wow nice and cool hello world program". After days passed away I lov
 [2]: http://i.imgur.com/xWBZv.jpg
 
 
-Lets say I wish to write a hello world program in Java. The code for doing it is here: 
+But there was a problem with Java and also with Jessi. The problem is :
+
+######We need to satifsy "them" for no reason.
+
+What I mean by this is, lets take a example, lets say I write a code in java like this:
+
+    System.out.println("Hello World!")
+
+Note that I have written the code without `;`. And Java is not **satifised**. You need to add `;` for no reason. That is there is no usefulness for us by adding it.
+Do you think so?
+
+If we give this code to Java/Jessi they wont accept it : 
+
+![trisha3][3]
+[3]: http://i.imgur.com/vfFeQ.jpg
+
+
+
+The problem was not with `;` colon alone. But with many other things. Just rewind some steps and look at the hello world program and think about it.
+
+The code for doing it is here: 
 
     class HelloWorldApp {
         public static void main(String[] args) {
@@ -50,10 +70,10 @@ Lets say I wish to write a hello world program in Java. The code for doing it is
         }
     }
 
-Ok that doesn't seems to be very hard at all. But lets stop for a moment and rethink what I said before. I want to write out hello world program, which essentially prints out the text `Hello World!`. But look at the java code for a moment. My aim is to print, just print, then why do I need a class? why do I need a command line args( `String[] args` )? Why do I need those `public` keywords? Ah! Thats too more java is excepting from us. 
+Ok that doesn't seems to be very hard at all. But lets stop for a moment and rethink what I said before. I want to write out hello world program, which essentially prints out the text `Hello World!`. But look at the java code for a moment. My aim is to print, just print, then why do I need a `class`? why do I need a command line args( `String[] args` )? Why do I need those `public` keywords? Ah! Thats too more java is excepting from us. 
 
 Our job is to print , so it should have been something like this in Java : 
 
     println("Hello World");
 
-but it isn't. 
+but it isn't.
