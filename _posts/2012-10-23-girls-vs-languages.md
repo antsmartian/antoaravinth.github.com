@@ -16,29 +16,37 @@ blah blah blah. . . . ". The list goes on and on. But I can understand your feel
 
 Look lets take another approach and say you why Groovy or other dynamic programming languages like Scala rocks ( in the world of Jvm ). Before I do that, you need to be sure why I dislike Java in some cases. Lets look at that first.
 
-###Note: The upcoming text is meant to be fun. When I said its "fun", it is "fun". In no way I'm hurting or teasing any girls out there. 
+#####Note: The upcoming text is meant to be fun. When I said its "fun", it is "fun". In no way I'm hurting or teasing any girls out there. 
 
 
-First reason why I hate java is, it is old. Java is more are like : 
+Java is more are like the character of "Jessi" in VTV film.
+
+
+![vtv][1] 
+[1]: http://i.imgur.com/JUJzq.jpg
+
+
+The moment you introduced to java you will be lost by its beauty. Really I did had the feeling when I saw the first java program like this :
+
+    class HelloWorldApp {
+        public static void main(String[] args) {
+            System.out.println("Hello World!");
+        }
+    }
 
 
 
-![sri_devi][1] 
-[1]: http://i.imgur.com/MFfB7.jpg
+I was like "wow nice and cool hello world program". After days passed away I loved Java deeply. I loved to write code in java and we were like : 
 
-
-
-
-Its been created some years back. 
-
-
+![trisha][2]
+[2]: http://i.imgur.com/xWBZv.jpg
 
 
 Lets say I wish to write a hello world program in Java. The code for doing it is here: 
 
     class HelloWorldApp {
         public static void main(String[] args) {
-            System.out.println("Hello World!"); // Display the string.
+            System.out.println("Hello World!");
         }
     }
 
