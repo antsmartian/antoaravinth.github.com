@@ -13,4 +13,4 @@ A dummy image :
 
 ![Inline picture][1]
 
-[1]: http://i.imgur.com/DyNyB
+[1]: http://i.imgur.com/DyNyB.jpg
