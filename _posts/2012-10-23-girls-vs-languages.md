@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "girls"
+title: "I doesn't want to satifsy you any more. I have another pair for me"
 description: ""
 category: 
 tags: []
@@ -16,7 +16,7 @@ blah blah blah. . . . ". The list goes on and on. But I can understand your feel
 
 Look lets take another approach and say you why Groovy or other dynamic programming languages like Scala rocks ( in the world of Jvm ). Before I do that, you need to be sure why I dislike Java in some cases. Lets look at that first.
 
-#####Note: The upcoming text is meant to be fun. When I said its "fun", it is "fun". In no way I'm hurting or teasing any girls out there. 
+#####Note: The upcoming text is just my imagination of explaning things. In no way I'm hurting or teasing any girls out there. 
 
 
 Java is more are like the character of "Jessi" in VTV film.
@@ -60,7 +60,7 @@ If we give this code to Java/Jessi they wont accept it :
 
 
 
-The problem was not with `;` colon alone. But with many other things. Just rewind some steps and look at the hello world program and think about it.
+It is something like "Sorry Karthick I need `;` . . . . ".The problem was not with `;` colon alone. But with many other things. Just rewind some steps and look at the hello world program and think about it.
 
 The code for doing it is here: 
 
@@ -132,7 +132,7 @@ Let us consider a simple java code:
     String anto = "someone"
     anto.length()
 
-Nothing fancy here. The `anto` is so type of `String` which is known by the compiler. With this known information when I do `anto.length()` Java know's I'm calling the `length()` method of `String` class. But consider the case in Groovy:
+Nothing fancy here. The `anto` is type of `String` which is known by the compiler. With this known information when I do `anto.length()` Java know's I'm calling the `length()` method of `String` class. But consider the case in Groovy:
 
     def anto = "someone"
     anto.size()
@@ -141,7 +141,7 @@ Nothing fancy here. The `anto` is so type of `String` which is known by the comp
     //after some code
     anto.callSomeMethod() 
 
-Ok with your naked eye can you say what is the type of `anto` in the above code? The types are changing. Can you be sure that `anto` can be only `String` and `Integer` in this case? `callSomeMethod()` will be belonging to which class ( tricky eh ) ? Compiler can't predict them in before hand so it need to something to make the code run faster. There is some one who need to help out Samantha. 
+Ok with your naked eye can you say what is the type of `anto` in the above code? The types are changing. Can you be sure that `anto` can be only `String` and `Integer` in this case? `callSomeMethod()` will be belonging to which class ( tricky eh ) ?. This is what I mean by dynmaic nature of the Groovy language. The java is a statically typed language meaning that, when it creates the class byte-code ( once you doing `javac your-file-name` ) all things are known and stored in the class byte-code. That is the caller of the method knows which class it belongs to, so and on and on. The case is not true in Groovy. So Groovy need's to find the type at "run time". There is some one who need to help out Samantha. Luckily we have one :D 
 
 That someone is : 
 
@@ -149,4 +149,38 @@ That someone is :
 [6]: http://i.imgur.com/4fi1m.jpg
 
 #####Intro to InvokeDynmaic:
+
+The `inovkedynmaic` is a new bytecode operation that is introduced in Java 7. The `invokedynamic` instruction allows **dynamic** linkage between a call site and the receiver of the call. All these things happen at run time. With the help of `invokedynamic` now Groovy can make decisions at run-time. Thanks to Java 7. 
+
+From version Groovy 2.0 , Groovy uses `invokedynamic` byte-code to increase it performance. With out `invokedynamic` groovy works. But Groovy compiler will somehow do the job of `invokedynamic` which are slow. Since `invokedynamic` are at byte-code level, using it in Groovy compilers will increase the performance and in fact it does. 
+
+Having used to Groovy is not meant that I forget Trisha or Java. They are still beautiful. The code that I used in java to open the files :
+
+	new BufferedReader(new FileReader("file"));
+
+Can be written as :
+
+	try ( ObjectInputStream in = new ObjectInputStream(new
+	FileInputStream("someFile.bin")) ) {
+		...
+	}
+
+from Java 7. This does the same thing of what Groovy clousres did. They will open the file and close the automatically. These are called as Try with Resources in Java 7. But these are not the closures in Java. Closures in Java will be in Java 8. The whole world is waiting for it. Java changes, even though it is old, it is still the beautiful. So I wait for next Java version :
+
+![trisha][7]
+[7]: http://i.imgur.com/NPgZx.jpg
+
+
+Since the concept of `invokedynamic` is not fully supported in Groovy the upcoming version will do them. Will wait for them. 
+
+![nee][8]
+[8]: http://i.imgur.com/KB1PJ.jpg
+
+I conclude that both languages has its trade-offs. Its how you write them up. Most of the time we use Groovy code but in our current project we use both Java and Groovy. We use Java where it shines and use Groovy where it rocks. We call groovy code from Java and java packages from Groovy. Both work seamlessely well. All in all, both trisha and samantha are the most beautiful. 
+
+I just simply wrote this blog post in a text editor(gedit). So there can be splling mistke, may would has gramatical flaws badly. If that is the case leave a comment.
+
+####That's All Folks!
+
+######Note: The concept of `invokedynamic` is huge. I have just defined them. There are more things that are going behind the scenes when you use `invokedynamic` which I didn't explain them here. 
 
