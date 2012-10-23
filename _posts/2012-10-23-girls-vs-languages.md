@@ -95,3 +95,36 @@ Pretty new when considered to Java and more beautiful. Groovy has some nice feat
     def closures = {  }
 
 The coolest thing in Groovy is that you no need to say the data type. Groovy can *infer* for you. That is in the above code `string` is of type `String`. But we haven't specified it in our code. Groovy can find that for us. The anology is same as like with Java. The closures in Groovy are very powerful in nature and they are similar to the delegate concept of C#.
+
+To be more precise, what you do if you want to do open a file in Java? You should do something like this:
+
+
+    new BufferedReader(new FileReader("file"));
+
+You have opened up the files but you should close it after using it. Usually people will wrap the above code with `try-finally` block. In `finally`  block they call `close()`. But what happen if in `finally` block the code throws an exception? You need to catch them too. Oops! More things to remember ah? 
+
+Lets look how Samantha helps us. The code for opening and printing each line in groovy is :
+
+    new File('myfile.txt').eachLine { println it }
+
+Thats it. The above code will open the file named `myfile.txt` and close them properly once it has been finished processing. The `{`,`}` block are called as closures which is taking care of opening and closing our file properly. 
+
+The reason why I choose Samantha pic of Naan Ee has two reasons. 1. To make guys stick to the post and 2. Was to . . . . .
+
+As in case of Naan Ee, being we as housefly we are just saying the compiler to do useful things but asking our compiler or samantha to do the rest hard work.
+
+What I mean by this is, when I do : 
+
+    new File('myfile.txt').eachLine { println it }
+
+This looks really great in the eyes of devoloper. But note how much work Groovy is needed to do in order to open the files and close them? 
+
+#####No lunch is called as "Free lunch"
+
+If Groovy is doing what *it* is said to do and what is not said to do ( in our example it is taking care of opening and closing the files, even though we didn't asked him to do ) then there is a issue. The issue is performance. Groovy code will run slower than Java code ( keep this in mind, I will come back later to this point ). Performance problem is someone like :
+
+![villan][5]
+[5]: http://i.imgur.com/Kyfqq.jpg
+
+We need to takle him in order to make Samantha/Groovy works faster. 
+
