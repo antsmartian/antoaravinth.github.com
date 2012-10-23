@@ -1,4 +1,4 @@
-# This is the default format. 
+#/ This is the default format. 
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:day/:title 
 
@@ -13,7 +13,7 @@ title : Blog On What I Love!
 tagline: A day ur not learning is a day ur not living!
 author : 
   name : Anto Aravinth
-#  github : antoaravinth
+ github : antoaravinth
   twitter : antoaravinth
 
 # The production_url is only used when full-domain names are needed
