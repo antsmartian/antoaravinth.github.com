@@ -12,7 +12,7 @@ A dummy image :
 
 
 
-<div style="text-align:center;"><img src="http://i.imgur.com/otCBe.jpg" /></div>
+<div style="text-align:center; position:absolute; "><img src="http://i.imgur.com/otCBe.jpg" /></div>
 <br />
 
 Hello text
