@@ -12,4 +12,4 @@ A dummy image :
 
 ![Inline picture][1] [1]: http://i.imgur.com/otCBe.jpg
 
-<div style="float: center"><img src="http://i.imgur.com/otCBe.jpg" /></div>
+<div style="float: left"><img src="http://i.imgur.com/otCBe.jpg" /></div>
