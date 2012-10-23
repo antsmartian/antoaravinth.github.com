@@ -44,7 +44,7 @@ I was like "wow nice and cool hello world program". After days passed away I lov
 
 But there was a problem with Java and also with Jessi. The problem is :
 
-######We need to satifsy "them" for no reason.
+#####We need to satifsy "them" for no reason.
 
 What I mean by this is, lets take a example, lets say I write a code in java like this:
 
@@ -74,6 +74,13 @@ Ok that doesn't seems to be very hard at all. But lets stop for a moment and ret
 
 Our job is to print , so it should have been something like this in Java : 
 
-    println("Hello World");
+    println("Hello World")
 
-but it isn't.
+but it isn't. The problem was with the design of the Java language. But eventually the code : 
+
+    println("Hello World")
+
+Is a valid Groovy code. This will do what exactly what Java did before. Groovy is some one like : 
+
+![samantha][4]
+[4]: http://i.imgur.com/Lorjz.jpg
