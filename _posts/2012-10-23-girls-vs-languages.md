@@ -80,7 +80,18 @@ but it isn't. The problem was with the design of the Java language. But eventual
 
     println("Hello World")
 
-Is a valid Groovy code. This will do what exactly what Java did before. Groovy is some one like : 
+Is a valid Groovy code. This will do what exactly what Java did before. Groovy is some one like Naan Ee's heroine : 
 
 ![samantha][4]
-[4]: http://i.imgur.com/Lorjz.jpg
+[4]: http://i.imgur.com/otCBe.jpg
+
+Pretty new when considered to Java and more beautiful. Groovy has some nice feature's like : 
+
+    
+    //no need to know the data type
+    def string = "string"
+
+    //closures
+    def closures = {  }
+
+The coolest thing in Groovy is that you no need to say the data type. Groovy can *infer* for you. That is in the above code `string` is of type `String`. But we haven't specified it in our code. Groovy can find that for us. The anology is same as like with Java. The closures in Groovy are very powerful in nature and they are similar to the delegate concept of C#.
