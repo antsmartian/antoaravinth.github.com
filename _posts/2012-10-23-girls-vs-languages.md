@@ -126,7 +126,7 @@ In file example Groovy is taking care of opening and closing the files. And also
 ![villan][5]
 [5]: http://i.imgur.com/Kyfqq.jpg
 
-We need to takle him in order to make Samantha/Groovy works faster. The introduction of Java 7 has a new type of bytecode called as `invokedynamice`.
+We need to takle him in order to make Samantha/Groovy works faster. The introduction of Java 7 has a new type of bytecode called as `invokedynamic`.
 Let us consider a simple java code:
 
     String anto = "someone"
@@ -141,7 +141,11 @@ Nothing fancy here. The `anto` is type of `String` which is known by the compile
     //after some code
     anto.callSomeMethod() 
 
-Ok with your naked eye can you say what is the type of `anto` in the above code? The types are changing. Can you be sure that `anto` can be only `String` and `Integer` in this case? `callSomeMethod()` will be belonging to which class ( tricky eh ) ?. This is what I mean by dynmaic nature of the Groovy language. The java is a statically typed language meaning that, when it creates the class byte-code ( once you doing `javac your-file-name` ) all things are known and stored in the class byte-code. That is the caller of the method knows which class it belongs to, so and on and on. The case is not true in Groovy. So Groovy need's to find the type at "run time". There is some one who need to help out Samantha. Luckily we have one :D 
+Ok with your naked eye can you say what is the type of `anto` in the above code? The types are changing ( `String` to `Integer` in our case ). Can you be sure that `anto` can be only `String` and `Integer` in this case? `callSomeMethod()` will be belonging to which class ( tricky eh ) ?. This is what I mean by dynmaic nature of the Groovy language. The java is a statically typed language meaning that, when it creates the class byte-code ( once you doing `javac your-file-name` ) all things are known and stored in the class byte-code. That is the caller of the method knows which class it belongs to, so and on and on. The case is not true in Groovy. So Groovy need's to find the type at "run time".
+
+That is Groovy to need to check what type `anto` belongs to first before it calls the method `callSomeMethod()` all this can be done only at run-time not at compile time!
+
+There is some one who need to help out Samantha. Luckily we have one :D 
 
 That someone is : 
 
@@ -150,11 +154,11 @@ That someone is :
 
 
 
-#####Intro to InvokeDynmaic:
+####Intro to InvokeDynmaic:
 
-The `inovkedynmaic` is a new bytecode operation that is introduced in Java 7. The `invokedynamic` instruction allows **dynamic** linkage between a call site and the receiver of the call. All these things happen at run time. With the help of `invokedynamic` now Groovy can make decisions at run-time. Thanks to Java 7. 
+The `inovkedynmaic` is a new bytecode operation that is introduced in Java 7. The `invokedynamic` instruction allows **dynamic** linkage between a call site and the receiver of the call. All these things happen at run time. With the help of `invokedynamic` now Groovy can make faster decisions at run-time. Thanks to Java 7. 
 
-From version Groovy 2.0 , Groovy uses `invokedynamic` byte-code to increase it performance. With out `invokedynamic` groovy works. But Groovy compiler will somehow do the job of `invokedynamic` which are slow. Since `invokedynamic` are at byte-code level, using it in Groovy compilers will increase the performance and in fact it does. 
+From version Groovy 2.0 , Groovy uses `invokedynamic` byte-code to increase it performance. Note that before the introduction of `invokedynamic` Groovy used to work well. But all the work was done by Groovy compiler . Since `invokedynamic` are at byte-code level, using it in Groovy compilers will increase the performance and in fact it does. 
 
 Having used to Groovy is not meant that I forget Trisha or Java. They are still beautiful. The code that I used in java to open the files :
 
@@ -167,22 +171,24 @@ Can be written as :
 		...
 	}
 
-from Java 7. This does the same thing of what Groovy clousres did. They will open the file and close the automatically. These are called as Try with Resources in Java 7. But these are not the closures in Java. Closures in Java will be in Java 8. The whole world is waiting for it. Java changes, even though it is old, it is still the beautiful. So I wait for next Java version :
+from Java 7. This does the same thing of what Groovy clousres did. They will open the file and close them automatically. These are called as **Try- with-Resources** in Java 7. But these are not the closures in Java. Closures in Java will be in Java 8. The whole world is waiting for it. Java changes, even though it is old, it is still the beautiful. So I wait for next Java version :
 
 ![trisha][7]
 [7]: http://i.imgur.com/NPgZx.jpg
 
 
-Since the concept of `invokedynamic` is not fully supported in Groovy the upcoming version will do them. Will wait for them. 
+Since the concept of `invokedynamic` is not fully supported in Groovy the upcoming version will do them. Will wait for them too. 
 
 ![nee][8]
 [8]: http://i.imgur.com/KB1PJ.jpg
 
 I conclude that both languages has its trade-offs. Its how you write them up. Most of the time we use Groovy code but in our current project we use both Java and Groovy. We use Java where it shines and use Groovy where it rocks. We call groovy code from Java and java packages from Groovy. Both work seamlessely well. All in all, both trisha and samantha are the most beautiful. 
 
+My intension was to give the overall view of Groovy and Java and where they shine. I hope I did. Comments are welcome. 
+
 I just simply wrote this blog post in a text editor(gedit). So there can be splling mistke, may would has gramatical flaws badly. If that is the case leave a comment.
 
 ####That's All Folks!
 
-######Note: The concept of `invokedynamic` is huge. I have just defined them. There are more things that are going behind the scenes when you use `invokedynamic` which I didn't explain them here. 
+#####Note: The concept of `invokedynamic` is huge. I have just defined them. There are more things that are going behind the scenes when you use `invokedynamic` which I didn't explain them here. 
 
