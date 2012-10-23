@@ -13,7 +13,7 @@ title : Blog On What I Love!
 tagline: A day ur not learning is a day ur not living!
 author : 
   name : Anto Aravinth
- github : antoaravinth
+# github : antoaravinth
   twitter : antoaravinth
 
 # The production_url is only used when full-domain names are needed
@@ -24,7 +24,7 @@ author :
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.com
+production_url : http://antoaravinth.github.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
