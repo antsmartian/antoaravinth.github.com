@@ -156,7 +156,7 @@ That someone is :
 
 ####Intro to InvokeDynmaic:
 
-The `inovkedynmaic` is a new bytecode operation that is introduced in Java 7. The `invokedynamic` instruction allows **dynamic** linkage between a call site and the receiver of the call. All these things happen at run time. With the help of `invokedynamic` now Groovy can make faster decisions at run-time. Thanks to Java 7. 
+The `invokedynamic` is a new bytecode operation that is introduced in Java 7. The `invokedynamic` instruction allows **dynamic** linkage between a call site and the receiver of the call. All these things happen at run time. With the help of `invokedynamic` now Groovy can make faster decisions at run-time. Thanks to Java 7. 
 
 From version Groovy 2.0 , Groovy uses `invokedynamic` byte-code to increase it performance. Note that before the introduction of `invokedynamic` Groovy used to work well. But all the work was done by Groovy compiler . Since `invokedynamic` are at byte-code level, using it in Groovy compilers will increase the performance and in fact it does. 
 
