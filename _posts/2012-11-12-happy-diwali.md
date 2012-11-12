@@ -104,3 +104,30 @@ But in reality it can be (Just imagine zip-bomb of size 40Mb can expand to 60+Gb
 
 
 [2]: http://i.stack.imgur.com/UTwJK.gif
+
+
+Thought of sharing this info with you guys. So happy diwali friends : 
+
+
+![Diwali][3]
+
+
+[3]: http://i.stack.imgur.com/Qas7S.gif
+
+And be safe:
+
+![Be Safe][4]
+
+
+[4]: http://i.stack.imgur.com/T3sHH.jpg
+
+
+And I promise that I will write the blog post on what I said earlier in the post about the latency check tool. 
+
+
+I just simply wrote this blog post in a text editor(gedit). So there can be splling mistke, may would has gramatical flaws badly. If that is the case leave a comment.
+
+Thanks for reading my post. If you have any doubts, feel free to post the comment. Comments are welcome! Suggestions welcome. 
+
+
+###That's all folks!
