@@ -7,7 +7,6 @@ tags: []
 ---
 {% include JB/setup %}
 
-//TODO add the bomb link
 
 Hi all, hope everyone is doing good. It was a busy weak end. Myself and [Arun](https://twitter.com/meeArun) attended the [Grails48](http://www.grails48.com/) event on prev saturday and where we created the tool for network monitoring. 
 
@@ -66,7 +65,7 @@ Ok will see what I did exactly to create that stupid zip file!
 
 The file that you tried to unzip is a normal text file! Belive me I didn't keep on a ziping a 10gb file to make that 9.7Mb size. Or used any other tools to do so. But intead used a simple idea.
 
-If your using Ubuntu for a while, you know exactly that there is an directory mounted named `/dev/zero`, which contains a full of special character. Compressing a 10Gb special character does take 45 secs or so. And that's what I exactly did. 
+If your using Ubuntu for a while, you know exactly that there is an directory mounted named `/dev/zero`, which contains a full of special character. Compressing a 10Gb special character does take 45 secs or so. Because they are text they can be easily compressed. And that's what I exactly did. 
 
 But wait a minute, how come I created a 10Gb special character text file? Is it that so much in size? 
 
@@ -78,7 +77,7 @@ With little amount of bash programming trick you can make a 10gb special charact
 
     dd if=/dev/zero bs=100000 count=1000000
 
-from your command-line, where `bs` says how quick the `dd` command should copy the contents from `/dev/zero` directory and `count` says that it should copy *blocks* of data. Here blocks to refers how data is retrieved from `/dev/zero` directory.
+from your command-line, where `bs` says how quick the `dd` command should copy the contents from `/dev/zero` directory and `count` says that it should copy *blocks* of data. 
 
 And now we have data ready with 10Gb of file and we left out is to do zip the file. That can be done easily by :
 
@@ -88,9 +87,9 @@ Thats the way I got that file.
 
 Anyways this is not I found myself, this technique is already available. Which is called as [zip bomb](http://en.wikipedia.org/wiki/Zip_bomb). (Now you would have probably guessed why I choose **zip-bomb** for this post, its somewhat relating to Diwali crackers)
 
-Zip-Bomb are's very dangerous. And its used to fool your anti-virus. Given this zip file your antivirus will go and try to checks it , it opens it. And thats it! All your space will taken up that file. And your system hangs! However most of anti-virus are of today can find easily that the file is a zip file without opening it! (Think about it, how antivirus can do such thing)
+Zip-Bomb are's very dangerous. And its used to fool your anti-virus. Given this zip file your antivirus will go and try to check it , it opens it. And thats it! All your hard disk space will taken up that file. And your system loses its speed and hangs! However most of anti-virus are of today can find easily that the file is a zip bomb file without opening it! (Think about it, how antivirus can do such a clever thing.)
 
-So typically the zip bombs looks like :
+So typically the zip bombs are treated as ( since before we unzip them they are small in size ):
 
 ![Bijili][1]
 
@@ -98,7 +97,7 @@ So typically the zip bombs looks like :
   [1]: http://i.stack.imgur.com/XpHAn.jpg
 
 
-But in reality it can be (Just imagine zip-bomb of size 40Mb can expand to 60+Gb!!) :
+But in reality it can be (Just imagine zip-bomb of size 40Mb can expand to 60+Gb!!, when you unzip it) :
 
 ![Dangerous!][2]
 
@@ -106,7 +105,7 @@ But in reality it can be (Just imagine zip-bomb of size 40Mb can expand to 60+Gb
 [2]: http://i.stack.imgur.com/UTwJK.gif
 
 
-Thought of sharing this info with you people. So here am I, "happy diwali friends" : 
+Thought of sharing this info with you people. So here am I, **"Happy Diwali Friends"** : 
 
 
 ![Diwali][3]
